@@ -1,9 +1,11 @@
+import Nav from "./components/Nav"
+import Form from "./components/Form"
+
 export default function Home() {
   return (
-    <main>
-      <div className="">
-        <p>Hllo</p>
-    </div>  
+    <main className="w-screen h-screen">
+      <Nav />
+      <Form />
     </main>
   )
 }

@@ -10,11 +10,14 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Post {
-  id        Int      @id @default(autoincrement())
+model User {
+  id Int @id @default(autoincrement())
+  reg_no String?
+  name String
+  branch String
+  year_of_study String
+  section String
+  batch String
+  type_of_participation String
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  title     String   @db.VarChar(255)
-  content   String?
-  published Boolean  @default(false)
 }
